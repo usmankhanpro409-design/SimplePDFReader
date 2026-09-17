@@ -1,26 +1,35 @@
-Simple PDF Reader
-=================
+Simple PDF Reader V2
+====================
 
 Features
 - No ads
-- No internet permission
-- Opens PDFs using Android's built-in PdfRenderer
-- Previous/Next buttons
-- Swipe left/right to change pages
-- Pinch to zoom (up to 4x)
-- Double-tap zoom
+- No INTERNET permission
+- Offline PDF reading
+- Android built-in PdfRenderer for page rendering
+- Open PDFs from storage or other apps
+- Recent PDFs list
+- Remembers last PDF and last page for each PDF
+- Previous / Next buttons
+- Swipe left/right between pages
+- Pinch zoom up to 5x
+- Double-tap zoom/reset
+- Jump to page
+- Page bookmarks (long-press Bookmark to view list)
+- Dark interface
+- Optional PDF color inversion in dark mode (long-press page counter for Document info)
+- Fullscreen reader
 - Share current PDF
-- Remembers the last opened PDF when Android grants persistent access
-- No storage permission required; uses Android file picker
+- Document info
+- Full-text search for text-based PDFs using pdfbox-android
+- Search works offline after installation
 
-Build without Android Studio (GitHub Actions)
-1. Create a free GitHub account/repository.
-2. Upload ALL files/folders from this project ZIP to the repository root.
-3. Open the repository's Actions tab.
-4. Open "Build APK" and run the workflow, or simply push to main/master.
-5. When the workflow finishes, open that workflow run.
-6. Download the artifact named "Simple-PDF-Reader-APK".
-7. Unzip it; inside is app-debug.apk.
-8. Copy app-debug.apk to your Redmi A1+ and install it.
+Search note
+Scanned/image-only PDFs do not contain searchable text unless OCR has already been embedded.
 
-Note: Android may ask permission to install apps from the browser/file manager you use. This app itself requests no Internet permission.
+Build without Android Studio
+1. Upload the CONTENTS of this project to a GitHub repository.
+2. Keep .github/workflows/build-apk.yml at exactly that path.
+3. Open GitHub Actions -> Build APK.
+4. Run the workflow or push a commit.
+5. Download artifact: Simple-PDF-Reader-V2-APK.
+6. Extract the artifact ZIP to get app-debug.apk.
